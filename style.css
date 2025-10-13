@@ -1,0 +1,84 @@
+body {
+  font-family: 'Press Start 2P', monospace;
+  background: linear-gradient(to bottom, #fffdd0, #ffeaaa);
+  color: #2b1800;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  height: 100vh;
+  margin: 0;
+  justify-content: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+h1 {
+  font-size: 18px;
+}
+
+.device {
+  background: #3b3b3b;
+  border: 10px solid black;
+  border-radius: 50%;
+  width: 300px;
+  height: 350px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.screen {
+  background: #a5d6a7;
+  border: 5px solid black;
+  border-radius: 20px;
+  width: 80%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  overflow: hidden;
+  transform: translateY(30px);
+}
+
+.screen img {
+  width: 80px;
+  filter: grayscale(20%);
+  transition: transform 0.2s;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-around; /* distribuye espacio entre los elementos */
+  align-items: center;           /* los centra verticalmente */
+  font-size: 10px;
+  width: 100%;                   /* asegura que use todo el ancho del contenedor */
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  background: #6a1b9a;
+  color: white;
+  border: 2px solid black;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: transform 0.1s;
+}
+
+button:active {
+  transform: scale(0.9);
+}
